@@ -7,6 +7,10 @@ A high-octane 3D racing game built with **Three.js** featuring neon-lit cyberpun
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
+## 🎮 [Play Now!](https://bhanu2006-24.github.io/racing-game/)
+
+**[🚀 Launch Game →](https://bhanu2006-24.github.io/racing-game/)**
+
 ## 🎮 Features
 
 ### 🌃 **Immersive 3D Environment**
@@ -185,7 +189,17 @@ const TOTAL_LAPS = 3; // Default: 3
 
 ## 📸 Screenshots
 
-**Coming Soon!** - Capture your best racing moments and share them!
+### Main Menu
+![Main Menu](public/start.png)
+*Dynamic menu screen with neon cyberpunk aesthetics*
+
+### Race Start - Countdown
+![Countdown](public/go.png)
+*Intense countdown before the race begins - Get ready!*
+
+### Victory Screen
+![Victory](public/won.png)
+*Cross the finish line first and claim your victory!*
 
 ## 🤝 Contributing
 
