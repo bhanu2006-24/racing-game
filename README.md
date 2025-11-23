@@ -1,234 +1,333 @@
+<div align="center">
+
 # 🏎️ Poly City Racer: Turbo
 
-A high-octane 3D racing game built with **Three.js** featuring neon-lit cyberpunk cityscapes, intense AI competition, and adrenaline-pumping nitro boosts!
+### *High-Octane 3D Racing in a Neon Cyberpunk City*
 
-![Racing Game](https://img.shields.io/badge/Game-Racing-ff3366?style=for-the-badge)
-![Three.js](https://img.shields.io/badge/Three.js-r128-00ffcc?style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+[![Racing Game](https://img.shields.io/badge/Game-Racing-ff3366?style=for-the-badge)](https://bhanu2006-24.github.io/racing-game/)
+[![Three.js](https://img.shields.io/badge/Three.js-r128-00ffcc?style=for-the-badge)](https://threejs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-## 🎮 [Play Now!](https://bhanu2006-24.github.io/racing-game/)
+### **[🚀 PLAY NOW →](https://bhanu2006-24.github.io/racing-game/)**
 
-**[🚀 Launch Game →](https://bhanu2006-24.github.io/racing-game/)**
+</div>
 
-## 🎮 Features
+---
 
-### 🌃 **Immersive 3D Environment**
-- Procedurally generated cyberpunk city with **350+ buildings**
-- Dynamic neon-lit skyscrapers with emissive lighting
-- Smooth curved racing track through the urban landscape
-- Atmospheric fog and professional lighting system
+## 🎬 Game Preview
+
+<div align="center">
+
+### 🏁 Race Menu
+<img src="public/start.png" alt="Main Menu" width="700"/>
+
+*Dynamic menu with neon cyberpunk aesthetics*
+
+---
+
+### ⏱️ Countdown Intensity
+<img src="public/go.png" alt="Countdown" width="700"/>
+
+*Ready... Set... GO!*
+
+---
+
+### 🏆 Victory Celebration
+<img src="public/won.png" alt="Victory Screen" width="700"/>
+
+*Cross the finish line first and claim your victory!*
+
+</div>
+
+---
+
+## ✨ Features at a Glance
+
+<table>
+<tr>
+<td width="50%">
+
+### 🌃 **Immersive 3D World**
+- 350+ procedurally generated buildings
+- Neon-lit cyberpunk skyscrapers
+- Dynamic fog & professional lighting
+- Smooth curved racing track
+
+</td>
+<td width="50%">
 
 ### 🏁 **Competitive Racing**
-- Race against **3 AI opponents** with unique personalities
-- **3-lap race** system with real-time position tracking
-- Smart AI that navigates the track and avoids collisions
-- Dynamic difficulty - AI competitors trade positions naturally
+- 3 AI opponents with unique strategies
+- 3-lap championship race
+- Real-time position tracking
+- Smart collision avoidance
 
-### 🚗 **Advanced Car Physics**
-- Realistic acceleration, friction, and turning mechanics
-- **Nitrous boost system** - Hold `SHIFT` for speed bursts
-- Drift mechanics with visual particle effects
-- Building collision detection and response
-- Dynamic camera with speed-based FOV adjustments
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-### 🎨 **Premium Visual Effects**
-- Real-time minimap with all racer positions
-- Particle system for drift and nitro trails
-- Dynamic spotlights from car headlights
-- Smooth shadows and reflections
-- Cyberpunk color palette (pink, cyan, yellow, purple)
+### 🚗 **Advanced Physics**
+- Realistic car dynamics
+- Nitrous boost system
+- Drift mechanics
+- Building collision detection
 
-### 📊 **Race HUD**
-- Live speedometer (KM/H)
-- Position tracker (1st/2nd/3rd/4th with color coding)
-- Lap counter
-- Nitrous fuel gauge with visual bar
-- Circular minimap showing track and all racers
+</td>
+<td width="50%">
 
-## 🎯 How to Play
+### 🎨 **Premium Visuals**
+- Real-time minimap
+- Particle effects (drift/nitro)
+- Dynamic camera with FOV shifts
+- Cyberpunk color palette
 
-### Controls
-| Key | Action |
-|-----|--------|
-| `W` / `↑` | Accelerate |
-| `S` / `↓` | Brake/Reverse |
-| `A` / `←` | Turn Left |
-| `D` / `→` | Turn Right |
-| `SHIFT` | Nitrous Boost |
-| `SPACE` | Brake |
-| `R` | Reset Car Position |
+</td>
+</tr>
+</table>
 
-### Gameplay Tips
-1. **Start Strong**: Get ahead in the first lap to maintain your lead
-2. **Drift Corners**: Use controlled drifting to maintain speed through turns
-3. **Nitro Strategy**: Save nitrous for straightaways to maximize speed
-4. **Avoid Buildings**: Collisions will reverse your momentum - stay on track!
-5. **Watch the Minimap**: Keep an eye on opponent positions
+---
 
-## 🚀 Getting Started
+## 🎮 Controls
 
-### Installation
+<div align="center">
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/racing-game.git
-   cd racing-game
-   ```
+| Key | Action | Key | Action |
+|:---:|:------|:---:|:------|
+| `W` / `↑` | **Accelerate** | `S` / `↓` | **Brake/Reverse** |
+| `A` / `←` | **Turn Left** | `D` / `→` | **Turn Right** |
+| `SHIFT` | **Nitrous Boost** 🔥 | `SPACE` | **Brake** |
+| `R` | **Reset Car** | - | - |
 
-2. **Open the game**
-   ```bash
-   # Simply open index.html in your browser
-   open index.html
-   # or
-   # Right-click index.html → Open with → Your Browser
-   ```
+</div>
 
-### Running a Local Server (Optional)
+---
 
-For the best experience, run with a local server:
+## 🚀 Quick Start
+
+### Option 1: Play Online
+```
+🌐 https://bhanu2006-24.github.io/racing-game/
+```
+
+### Option 2: Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/bhanu2006-24/racing-game.git
+cd racing-game
+
+# Open directly in browser
+open index.html
+```
+
+### Option 3: Local Server
 
 ```bash
 # Using Python 3
 python -m http.server 8000
 
-# Using Python 2
-python -m SimpleHTTPServer 8000
-
-# Using Node.js (if you have http-server installed)
+# Using Node.js
 npx http-server -p 8000
+
+# Then visit: http://localhost:8000
 ```
 
-Then visit `http://localhost:8000` in your browser.
+---
 
-## 🛠️ Technical Details
+## � Pro Tips
 
-### Built With
-- **Three.js** (r128) - 3D graphics library
-- **Vanilla JavaScript** (ES6+) - Game logic
-- **HTML5** - Structure
-- **CSS3** - UI styling
+<div align="center">
 
-### Architecture
+| Tip | Strategy |
+|-----|----------|
+| 🏃 **Start Strong** | Lead from lap one to control the race |
+| 🌀 **Drift Smart** | Use controlled drifts to maintain corner speed |
+| ⚡ **Nitro Timing** | Save boosts for straightaways, not corners |
+| 🏗️ **Avoid Buildings** | Collisions reverse momentum - stay on track! |
+| 🗺️ **Watch Minimap** | Track opponent positions strategically |
+
+</div>
+
+---
+
+## 🛠️ Technical Stack
+
+<div align="center">
+
+| Technology | Purpose |
+|:----------:|:--------|
+| ![Three.js](https://img.shields.io/badge/Three.js-r128-black?style=flat-square&logo=three.js) | 3D Graphics Engine |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square&logo=javascript) | Game Logic & Physics |
+| ![HTML5](https://img.shields.io/badge/HTML5-Structure-orange?style=flat-square&logo=html5) | Page Structure |
+| ![CSS3](https://img.shields.io/badge/CSS3-Styling-blue?style=flat-square&logo=css3) | UI & HUD Design |
+
+</div>
+
+### Architecture Highlights
+
+```
+🎮 Game Engine
+├── CarController class → Physics, AI, player input
+├── ParticleSystem class → Visual effects
+├── Track generation → Catmull-Rom curves
+└── City generation → Procedural buildings
+
+⚙️ Systems
+├── Physics → Velocity, friction, collision
+├── AI → Pathfinding, speed variation, avoidance
+└── Racing → Lap tracking, position calculation
+```
+
+---
+
+## 🎨 Customization Guide
+
+<details>
+<summary><b>🎨 Change Car Colors</b></summary>
+
+```javascript
+const COLORS = [0xff3366, 0x00ccff, 0xccff00, 0xcc00ff];
+// Player ↑    AI1 ↑       AI2 ↑       AI3 ↑
+```
+</details>
+
+<details>
+<summary><b>🏎️ Adjust Physics</b></summary>
+
+```javascript
+this.acceleration = 0.035;   // Acceleration rate
+this.maxSpeed = 2.4;         // Maximum speed
+this.turnSpeed = 0.045;      // Turn rate
+this.nitroMaxSpeed = 3.5;    // Nitro max speed
+```
+</details>
+
+<details>
+<summary><b>🏁 Modify Race Settings</b></summary>
+
+```javascript
+const TOTAL_LAPS = 3;        // Number of laps
+const TRACK_SCALE = 1.2;     // Track size multiplier
+```
+</details>
+
+---
+
+## 🗺️ Roadmap
+
+### 🎯 Upcoming Features
+
+- [ ] 🎵 Sound effects & background music
+- [ ] 🏆 Multiple tracks & difficulty levels
+- [ ] ⚡ Power-ups & boost pads
+- [ ] 💾 Save/load race records
+- [ ] 🎯 Time trial mode
+- [ ] 📱 Mobile touch controls
+- [ ] 🌐 Multiplayer racing (WebRTC)
+
+---
+
+## � Project Structure
 
 ```
 racing-game/
 │
-├── index.html          # Main game file (self-contained)
-├── README.md          # Documentation
-├── LICENSE            # MIT License
-└── .gitignore         # Git ignore rules
+├── 📄 index.html       # Main game file (self-contained)
+├── 📁 public/          # Screenshot assets
+│   ├── start.png
+│   ├── go.png
+│   └── won.png
+├── 📖 README.md        # This file
+├── 📜 LICENSE          # MIT License
+└── 🚫 .gitignore       # Git ignore rules
 ```
-
-### Key Components
-
-**Game Engine**
-- `CarController` class - Handles physics, AI, and player input
-- `ParticleSystem` class - Visual effects for drifting and nitro
-- Track generation using Catmull-Rom curves
-- Procedural city generation with collision detection
-
-**Physics System**
-- Velocity-based movement
-- Friction simulation
-- Turn speed mechanics
-- Collision detection and response
-- Lap progress calculation using track projection
-
-**AI System**
-- Pathfinding along track curve
-- Look-ahead targeting
-- Speed variation for realistic racing
-- Collision avoidance
-
-## 🎨 Customization
-
-### Modify Car Colors
-Edit the `COLORS` array in `index.html`:
-```javascript
-const COLORS = [0xff3366, 0x00ccff, 0xccff00, 0xcc00ff];
-// Player, AI1, AI2, AI3
-```
-
-### Adjust Track Size
-Change the `TRACK_SCALE` constant:
-```javascript
-const TRACK_SCALE = 1.2; // Default: 1.2
-```
-
-### Modify Physics
-Adjust car properties in `CarController`:
-```javascript
-this.acceleration = 0.035;  // Acceleration rate
-this.maxSpeed = 2.4;        // Max speed
-this.turnSpeed = 0.045;     // Turn rate
-this.nitroMaxSpeed = 3.5;   // Nitro max speed
-```
-
-### Change Number of Laps
-```javascript
-const TOTAL_LAPS = 3; // Default: 3
-```
-
-## 🐛 Known Issues & Future Improvements
-
-### Current Limitations
-- Single track layout (can be expanded)
-- No sound effects (music/SFX to be added)
-- No power-ups or collectibles
-- No multiplayer support
-
-### Planned Features
-- 🎵 Sound effects and background music
-- 🏆 Multiple tracks and difficulty levels
-- ⚡ Power-ups and boost pads
-- 💾 Save/load race times and records
-- 🎯 Time trial mode
-- 📱 Mobile touch controls
-- 🌐 Multiplayer racing
-
-## 📸 Screenshots
-
-### Main Menu
-![Main Menu](public/start.png)
-*Dynamic menu screen with neon cyberpunk aesthetics*
-
-### Race Start - Countdown
-![Countdown](public/go.png)
-*Intense countdown before the race begins - Get ready!*
-
-### Victory Screen
-![Victory](public/won.png)
-*Cross the finish line first and claim your victory!*
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Bhanu Pratap Saini**
-- GitHub: [@bhanu2006-24](https://github.com/bhanu2006-24)
-
-## 🙏 Acknowledgments
-
-- **Three.js** team for the amazing 3D library
-- Inspiration from classic arcade racing games
-- Cyberpunk aesthetic and neon city vibes
-
-## 🌟 Show Your Support
-
-Give a ⭐️ if you enjoyed playing this game!
 
 ---
 
-**Ready to race?** Fire up your engine and dominate the neon streets! 🏁💨
+## 🤝 Contributing
+
+<div align="center">
+
+Contributions are welcome! Here's how you can help:
+
+[![Fork](https://img.shields.io/badge/Fork-Repository-blue?style=for-the-badge)](https://github.com/bhanu2006-24/racing-game/fork)
+[![Issues](https://img.shields.io/badge/Report-Issues-red?style=for-the-badge)](https://github.com/bhanu2006-24/racing-game/issues)
+[![Pull Request](https://img.shields.io/badge/Submit-PR-green?style=for-the-badge)](https://github.com/bhanu2006-24/racing-game/pulls)
+
+</div>
+
+### Development Workflow
+
+1. **Fork** the repository
+2. **Create** a feature branch
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit** your changes
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+4. **Push** to the branch
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open** a Pull Request
+
+---
+
+## 📄 License
+
+<div align="center">
+
+This project is licensed under the **MIT License**
+
+See [LICENSE](LICENSE) file for details
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+</div>
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+**Bhanu Pratap Saini**
+
+[![GitHub](https://img.shields.io/badge/GitHub-bhanu2006--24-181717?style=for-the-badge&logo=github)](https://github.com/bhanu2006-24)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/bhanu-saini-3bb251391)
+
+</div>
+
+---
+
+## 🙏 Acknowledgments
+
+<div align="center">
+
+🌟 **Three.js Team** - Amazing 3D graphics library  
+🎮 **Classic Arcade Racers** - Inspiration and nostalgia  
+🌃 **Cyberpunk Aesthetic** - Visual design inspiration  
+
+</div>
+
+---
+
+<div align="center">
+
+### 🌟 Show Your Support
+
+**If you enjoyed this game, give it a ⭐️!**
+
+### Ready to race? 🏁
+
+**[PLAY NOW →](https://bhanu2006-24.github.io/racing-game/)**
+
+---
+
+*Built with ❤️ and ☕ by [Bhanu Pratap Saini](https://github.com/bhanu2006-24)*
+
+</div>
