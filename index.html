@@ -766,36 +766,105 @@
         function createCarMesh(color) {
             const group = new THREE.Group();
 
-            // Main Body (Cyberpunk wedge style)
-            const shape = new THREE.Shape();
-            shape.moveTo(0, 0);
-            shape.lineTo(0, 1.2);
-            shape.lineTo(1.5, 1.2); // Roof back
-            shape.lineTo(2.5, 0.5); // Hood
-            shape.lineTo(3.0, 0); // Nose
-            shape.lineTo(0, 0);
+            // Main Body - Lower base
+            const baseGeo = new THREE.BoxGeometry(3.0, 0.8, 1.8);
+            const baseMat = new THREE.MeshStandardMaterial({ color: color, metalness: 0.3, roughness: 0.6 });
+            const base = new THREE.Mesh(baseGeo, baseMat);
+            base.position.set(0, 0.5, 0);
+            base.castShadow = true;
+            group.add(base);
 
-            const extrudeSettings = { steps: 1, depth: 1.6, bevelEnabled: true, bevelThickness: 0.1, bevelSize: 0.1, bevelSegments: 1 };
-            const geo = new THREE.ExtrudeGeometry(shape, extrudeSettings);
+            // Cabin/Roof
+            const cabinGeo = new THREE.BoxGeometry(1.5, 0.7, 1.6);
+            const cabin = new THREE.Mesh(cabinGeo, baseMat);
+            cabin.position.set(-0.3, 1.2, 0);
+            cabin.castShadow = true;
+            group.add(cabin);
 
-            // FIX: Reduced metalness (was 0.8) so it's visible without env map
-            const mat = new THREE.MeshStandardMaterial({ color: color, metalness: 0.1, roughness: 0.5 });
-            const body = new THREE.Mesh(geo, mat);
+            // Windshield
+            const windshieldGeo = new THREE.BoxGeometry(0.1, 0.6, 1.5);
+            const windshieldMat = new THREE.MeshStandardMaterial({
+                color: 0x111111,
+                metalness: 0.9,
+                roughness: 0.1,
+                transparent: true,
+                opacity: 0.3
+            });
+            const windshield = new THREE.Mesh(windshieldGeo, windshieldMat);
+            windshield.position.set(0.5, 1.2, 0);
+            group.add(windshield);
 
-            // FIX: Re-centered the body mesh to align with car group origin
-            body.rotation.y = -Math.PI / 2;
-            body.position.set(-0.8, 0.4, 1.5); // Correctly offsets the extruded shape
+            // Hood detail
+            const hoodGeo = new THREE.BoxGeometry(1.2, 0.1, 1.4);
+            const hoodMat = new THREE.MeshStandardMaterial({ color: color, metalness: 0.5, roughness: 0.3 });
+            const hood = new THREE.Mesh(hoodGeo, hoodMat);
+            hood.position.set(1.0, 0.95, 0);
+            group.add(hood);
 
-            group.add(body);
+            // Wheels
+            const wheelGeo = new THREE.CylinderGeometry(0.4, 0.4, 0.3, 16);
+            const wheelMat = new THREE.MeshStandardMaterial({ color: 0x222222, metalness: 0.8, roughness: 0.4 });
 
-            // Glow Strip (Tail)
-            const glowGeo = new THREE.BoxGeometry(0.1, 0.2, 1.6);
-            const glowMat = new THREE.MeshBasicMaterial({ color: color, toneMapped: false });
+            // Front Left Wheel
+            const wheelFL = new THREE.Mesh(wheelGeo, wheelMat);
+            wheelFL.rotation.z = Math.PI / 2;
+            wheelFL.position.set(0.9, 0.4, 1.0);
+            wheelFL.castShadow = true;
+            group.add(wheelFL);
+
+            // Front Right Wheel
+            const wheelFR = new THREE.Mesh(wheelGeo, wheelMat);
+            wheelFR.rotation.z = Math.PI / 2;
+            wheelFR.position.set(0.9, 0.4, -1.0);
+            wheelFR.castShadow = true;
+            group.add(wheelFR);
+
+            // Rear Left Wheel
+            const wheelRL = new THREE.Mesh(wheelGeo, wheelMat);
+            wheelRL.rotation.z = Math.PI / 2;
+            wheelRL.position.set(-0.9, 0.4, 1.0);
+            wheelRL.castShadow = true;
+            group.add(wheelRL);
+
+            // Rear Right Wheel
+            const wheelRR = new THREE.Mesh(wheelGeo, wheelMat);
+            wheelRR.rotation.z = Math.PI / 2;
+            wheelRR.position.set(-0.9, 0.4, -1.0);
+            wheelRR.castShadow = true;
+            group.add(wheelRR);
+
+            // Glow Strip (Tail lights)
+            const glowGeo = new THREE.BoxGeometry(0.1, 0.3, 1.6);
+            const glowMat = new THREE.MeshBasicMaterial({ color: 0xff0033, toneMapped: false });
             const glow = new THREE.Mesh(glowGeo, glowMat);
-            glow.position.set(-0.8, 1.0, 0);
+            glow.position.set(-1.5, 0.8, 0);
             group.add(glow);
 
+            // Side accent strips
+            const stripGeo = new THREE.BoxGeometry(2.8, 0.05, 0.1);
+            const stripMat = new THREE.MeshBasicMaterial({ color: color, toneMapped: false });
+
+            const stripL = new THREE.Mesh(stripGeo, stripMat);
+            stripL.position.set(0, 0.6, 0.9);
+            group.add(stripL);
+
+            const stripR = new THREE.Mesh(stripGeo, stripMat);
+            stripR.position.set(0, 0.6, -0.9);
+            group.add(stripR);
+
             // Headlights
+            const headlightGeo = new THREE.BoxGeometry(0.1, 0.2, 0.3);
+            const headlightMat = new THREE.MeshBasicMaterial({ color: 0xffffaa });
+
+            const headlightL = new THREE.Mesh(headlightGeo, headlightMat);
+            headlightL.position.set(1.5, 0.6, 0.6);
+            group.add(headlightL);
+
+            const headlightR = new THREE.Mesh(headlightGeo, headlightMat);
+            headlightR.position.set(1.5, 0.6, -0.6);
+            group.add(headlightR);
+
+            // Spotlight lights for gameplay
             const lightL = new THREE.SpotLight(0xffffff, 5, 100, 0.6, 0.5, 1);
             lightL.position.set(1.5, 0.8, 0.6);
             lightL.target.position.set(10, 0, 0.6);
